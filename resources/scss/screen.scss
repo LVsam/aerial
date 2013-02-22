@@ -7,16 +7,22 @@
 
 @import "base";
 @import "layout";
+@import "net-worth";
 
 
 body{
 	font:11px Arial, Helvetica, sans-serif;
 	color:#fff;
 	background:#111;
+<<<<<<< HEAD
 	padding-top:40px;
 }
 
 #timeline{
 width: 100%;
 margin: 0 auto;
+=======
+	padding-top:50px;
+	overflow-y:scroll;
+>>>>>>> af7ecf1bfe3435980471044ad874bcc9b34c9fe1
 }
