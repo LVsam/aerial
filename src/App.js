@@ -6,6 +6,8 @@ define(function (require) {
 	var Backbone = require('backbone');
 	var Marionette = require('marionette');
 
+	var Controls = require('./Controls/View.Controls');
+
 	// Modules
 	// var Analytics = require('./App.Analytics');
 	// var Cache = require('./App.Cache');
@@ -29,7 +31,8 @@ define(function (require) {
 		// Main regions
 		// navigation: '#navigation',
 		netWorth: '#net-worth',
-		timeline: '#timeline'
+		timeline: '#timeline',
+		controls: '#ui-controls'
 
 		// Overlap regions
 		// modal: Modal,
@@ -52,6 +55,9 @@ define(function (require) {
 		// App.Analytics = new Analytics(config);
 		// App.Locale = new Locale(config);
 		App.Router = new Router(config);
+
+		App.controls.show(new Controls(config));
+
 
 		// Show App Regions
 		// App.navigation.show(new Navigation(config));
