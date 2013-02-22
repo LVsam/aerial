@@ -1,5 +1,7 @@
-@import "../../components/normalize.scss/normalize"
-// @import "compass/reset";
+@import "../../components/normalize.scss/normalize";
+
+@import "../../components/twitter-bootstrap-sass/vendor/assets/stylesheets/bootstrap";
+@import "compass/reset";
 
 @import "base";
 @import "layout";
