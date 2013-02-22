@@ -7,6 +7,7 @@ define(function (require) {
 	var Marionette = require('marionette');
 
 	var Controls = require('./Controls/View.Controls');
+	var Timeline = require('./Timeline/View.Timeline');
 
 	// Modules
 	// var Analytics = require('./App.Analytics');
@@ -57,6 +58,7 @@ define(function (require) {
 		App.Router = new Router(config);
 
 		App.controls.show(new Controls(config));
+		App.timeline.show(new Timeline(config));
 
 
 		// Show App Regions

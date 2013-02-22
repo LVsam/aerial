@@ -34,6 +34,9 @@
 			underscore: {
 				exports: '_'
 			},
+			nvd3: {
+				deps: ['d3']
+			},
 			marionette: {
 				deps: ['jquery', 'underscore', 'backbone'],
 				exports: 'Marionette'
