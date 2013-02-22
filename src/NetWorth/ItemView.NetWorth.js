@@ -6,43 +6,47 @@ define(function (require) {
 	var Backbone = require('backbone');
 	var Marionette = require('marionette');
 
-	var d3Lib = require('d3');
-	var nvd3 = require('nvd3');
-
-	var data = require('./NetWorthJson');
+	var d3 = require('d3');
+	var nv = require('nvd3');
 
 	var template = require('text!Templates/netWorth.html');
-	// var template = 'NetWorth';
+	
+	var data = require('./NetWorthJson');
+
 	return Backbone.Marionette.ItemView.extend({
 		template: template,
-		// className: 'f-inbox',
 		initialize: function (options) {
 			_.bindAll(this);
 			this.options = options;
 
-			this.initNvd3();
+			this.init1();
 		},
-		initNvd3: function () {
+		init1: function () {
 
-				nv.addGraph(function () {
-					var chart = nv.models.stackedAreaChart().x(function (d) {
-						return d[0]
-					}).y(function (d) {
-						return d[1]
-					}).clipEdge(true);
+			var colors = d3.scale.category20();
+			var keyColor = function (d, i) {
+					return colors(d.key);
+				};
 
-					chart.xAxis.tickFormat(function (d) {
-						return d3.time.format('%x')(new Date(d))
-					});
+			nv.addGraph(function () {
+				var chart = nv.models.stackedAreaChart().x(function (d) {
+					return d[0];
+				}).y(function (d) {
+					return d[1];
+				}).clipEdge(true).color(keyColor);
 
-					chart.yAxis.tickFormat(d3.format(',.2f'));
-
-					d3.select('#chart svg').datum(data).transition().duration(500).call(chart);
-
-					nv.utils.windowResize(chart.update);
-
-					return chart;
+				chart.xAxis.tickFormat(function (d) {
+					return d3.time.format('%x')(new Date(d));
 				});
+
+				chart.yAxis.tickFormat(d3.format(',.2f'));
+
+				d3.select('#chart').datum(data).transition().duration(500).call(chart);
+
+				nv.utils.windowResize(chart.update);
+
+				return chart;
+			});
 		}
 	});
 });

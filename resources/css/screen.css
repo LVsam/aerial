@@ -5674,10 +5674,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 12, ../scss/screen.scss */
+/* line 1, ../scss/_net-worth.scss */
+#chart {
+  height: 400px;
+}
+
+/* line 13, ../scss/screen.scss */
 body {
   font: 11px Arial, Helvetica, sans-serif;
   color: #fff;
   background: #111;
   padding-top: 50px;
+  overflow-y: scroll;
 }

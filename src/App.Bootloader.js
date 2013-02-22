@@ -34,12 +34,12 @@
 			underscore: {
 				exports: '_'
 			},
+			d3: {
+				exports: 'd3'
+			},
 			nvd3: {
 				deps: ['d3'],
-				exports: ['nv']
-			},
-			d3: {
-				exports: ['d3']
+				exports: 'nv'
 			},
 			marionette: {
 				deps: ['jquery', 'underscore', 'backbone'],
