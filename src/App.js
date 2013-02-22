@@ -49,7 +49,6 @@ define(function (require) {
 		// App.Locale = new Locale(config);
 		App.Router = new Router(config);
 
-		debugger;
 		// Show App Regions
 		// App.navigation.show(new Navigation(config));
 

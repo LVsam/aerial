@@ -21,7 +21,10 @@
 			dateUtils: './Utils/DateUtils',
 			numberUtils: './Utils/NumberUtils',
 			stringUtils: './Utils/StringUtils',
-			tabletUtils: './Utils/TabletUtils'
+			tabletUtils: './Utils/TabletUtils',
+
+			timeline: '../components/timelinejs/compiled/timeline',
+			nvd3: '../components/nvd3/nv.d3'
 		},
 		shim: {
 			jquery: {
