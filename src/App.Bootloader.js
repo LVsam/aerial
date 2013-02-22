@@ -24,7 +24,8 @@
 			tabletUtils: './Utils/TabletUtils',
 
 			timeline: '../components/timelinejs/compiled/timeline',
-			nvd3: '../components/nvd3/nv.d3'
+			nvd3: '../components/nvd3/nv.d3',
+			d3: '../components/d3/d3'
 		},
 		shim: {
 			jquery: {

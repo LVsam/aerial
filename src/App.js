@@ -16,7 +16,9 @@ define(function (require) {
 
 	// Views
 	// var Navigation = require('./Navigation/CompositeView.Navigation');
-	
+	var NetWorth = require('./NetWorth/ItemView.NetWorth');
+
+
 	// Regions
 	// var Modal = require('./Modal/Region.Modal');
 	// var Notification = require('./Notification/Region.Notification');
@@ -53,6 +55,7 @@ define(function (require) {
 
 		// Show App Regions
 		// App.navigation.show(new Navigation(config));
+		App.netWorth.show(new NetWorth(config));
 
 		// Extend cache functionality to all views
 		// _.extend(Backbone.Marionette.View.prototype, {
