@@ -1,0 +1,10 @@
+{
+	"name": "Aerial",
+	"version": "1.0.0",
+	"author": "Samitch",
+	"dependencies": {
+		"grunt-compass": "*",
+		"grunt-contrib": "*",
+		"grunt-yui-compressor": "*"
+	}
+}

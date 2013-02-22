@@ -1,0 +1,16 @@
+{
+  "name": "Aerial",
+  "version": "0.0.0",
+  "dependencies": {
+    "d3": "~3.0.6",
+    "nvd3": "latest",
+    "requirejs": "~2.1.4",
+    "jquery": "~1.9.1",
+    "marionette": "~1.0.0-rc6",
+    "backbone": "~0.9.10",
+    "handlebars": "~1.0.0-rc.2",
+    "lodash": "~1.0.1",
+    "twitter-bootstrap-sass": "~2.0.3",
+    "normalize.scss": "~2.1.0"
+  }
+}
