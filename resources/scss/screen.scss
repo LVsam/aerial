@@ -1,7 +1,14 @@
 @import "../../components/normalize.scss/normalize";
-
+@import "vars";
 @import "../../components/twitter-bootstrap-sass/vendor/assets/stylesheets/bootstrap";
 @import "compass/reset";
 
 @import "base";
 @import "layout";
+
+
+body{
+	font:11px Arial, Helvetica, sans-serif;
+	color:#fff;
+	background:#111;
+}
