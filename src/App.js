@@ -25,7 +25,9 @@ define(function (require) {
 	var App = new Backbone.Marionette.Application();
 	App.addRegions({
 		// Main regions
-		navigation: '#navigation',
+		// navigation: '#navigation',
+		netWorth: '#net-worth',
+		timeline: '#timeline'
 
 		// Overlap regions
 		// modal: Modal,
