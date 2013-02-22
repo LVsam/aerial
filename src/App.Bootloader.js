@@ -36,10 +36,10 @@
 			},
 			nvd3: {
 				deps: ['d3'],
-				exports: ['nv']
+				exports: 'nv'
 			},
 			d3: {
-				exports: ['d3']
+				exports: 'd3'
 			},
 			marionette: {
 				deps: ['jquery', 'underscore', 'backbone'],
