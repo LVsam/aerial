@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "dependencies": {
     "d3": "~3.0.6",
-    "nvd3": "latest",
     "requirejs": "~2.1.4",
     "jquery": "~1.9.1",
     "marionette": "~1.0.0-rc6",
