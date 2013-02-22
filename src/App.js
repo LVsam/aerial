@@ -6,8 +6,6 @@ define(function (require) {
 	var Backbone = require('backbone');
 	var Marionette = require('marionette');
 
-	var Controls = require('./Controls/View.Controls');
-	var Timeline = require('./Timeline/View.Timeline');
 
 	// Modules
 	// var Analytics = require('./App.Analytics');
@@ -19,6 +17,8 @@ define(function (require) {
 
 	// Views
 	// var Navigation = require('./Navigation/CompositeView.Navigation');
+	var Controls = require('./Controls/View.Controls');
+	var Timeline = require('./Timeline/View.Timeline');
 	var NetWorth = require('./NetWorth/ItemView.NetWorth');
 
 
@@ -59,11 +59,11 @@ define(function (require) {
 
 		App.controls.show(new Controls(config));
 		App.timeline.show(new Timeline(config));
+		App.netWorth.show(new NetWorth(config));
 
 
 		// Show App Regions
 		// App.navigation.show(new Navigation(config));
-		App.netWorth.show(new NetWorth(config));
 
 		// Extend cache functionality to all views
 		// _.extend(Backbone.Marionette.View.prototype, {
