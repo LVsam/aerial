@@ -9,7 +9,6 @@ define(function(require) {
 
 	var ErrorInstance = require('error');
 
-
 	// Override Marionette to use Handlebars Templates
 	Backbone.Marionette.TemplateCache.prototype.loadTemplate = function(template) {
 		if(!template || template.length === 0) {

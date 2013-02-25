@@ -8,7 +8,7 @@ define(function (require) {
   var data = [];
 
   function interest(p, r, t){
-    return p * Math.Pow(Math.e, r * t);
+    return p * Math.pow(Math.e, r * t);
   }
 
   function partialInterest(p, r){
@@ -17,8 +17,11 @@ define(function (require) {
     };
   }
 
-  function generateVector(P, r, t, n){
-    return _.map(_.range(200), partialInterest(500, 0.02));
+
+
+
+  function generateVector(p, r, t, n){
+    return _.map(_.range(n), partialInterest(p, r));
   }
 
   data.push({

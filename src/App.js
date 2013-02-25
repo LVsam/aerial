@@ -9,7 +9,7 @@ define(function (require) {
 
 	// Modules
 	// var Analytics = require('./App.Analytics');
-	// var Cache = require('./App.Cache');
+	var Cache = require('./App.Cache');
 	// var DeviceSupport = require('./App.DeviceSupport');
 	// var Locale = require('./App.Locale');
 	// var Overrides = require('./Overrides/App.Overrides');
@@ -17,9 +17,9 @@ define(function (require) {
 
 	// Views
 	// var Navigation = require('./Navigation/CompositeView.Navigation');
-	var Controls = require('./Controls/View.Controls');
-	var Timeline = require('./Timeline/View.Timeline');
-	var NetWorth = require('./NetWorth/ItemView.NetWorth');
+	var Controls = require('./Views/Controls/View.Controls');
+	var Timeline = require('./Views/Timeline/View.Timeline');
+	var NetWorth = require('./Views/NetWorth/ItemView.NetWorth');
 
 
 	// Regions
@@ -52,7 +52,7 @@ define(function (require) {
 		// App Modules
 		// App.DeviceSupport = new DeviceSupport();
 		// App.Overrides = new Overrides();
-		// App.Cache = new Cache(config);
+		App.Cache = new Cache(config);
 		// App.Analytics = new Analytics(config);
 		// App.Locale = new Locale(config);
 		App.Router = new Router(config);
@@ -66,9 +66,9 @@ define(function (require) {
 		// App.navigation.show(new Navigation(config));
 
 		// Extend cache functionality to all views
-		// _.extend(Backbone.Marionette.View.prototype, {
-		// 	cache: App.Cache
-		// });
+		_.extend(Backbone.Marionette.View.prototype, {
+			cache: App.Cache
+		});
 
 		Backbone.history.start();
 	});

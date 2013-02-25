@@ -23,7 +23,7 @@
 			stringUtils: './Utils/StringUtils',
 			tabletUtils: './Utils/TabletUtils',
 
-			timeline: '../components/timelinejs/compiled/timeline',
+			timeline: '../libs/TimelineJS/compiled/timeline',
 			d3: '../components/d3/d3'
 		},
 		shim: {
