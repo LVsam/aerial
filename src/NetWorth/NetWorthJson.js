@@ -1,6 +1,33 @@
 define(function (require) {
   'use strict';
 
+  var _ = require('underscore');
+
+
+
+  var data = [];
+
+  function interest(p, r, t){
+    return p * Math.Pow(Math.e, r * t);
+  }
+
+  function partialInterest(p, r){
+    return function(t){
+      return interest(p,r,t);
+    };
+  }
+
+  function generateVector(P, r, t, n){
+    return _.map(_.range(200), partialInterest(500, 0.02));
+  }
+
+  data.push({
+    key: "401k",
+    values: generateVector(500, 0.02, 1/12, 250)
+  });
+
+
+
   return [ 
     { 
       "key" : "North America" , 

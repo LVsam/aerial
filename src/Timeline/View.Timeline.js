@@ -7,7 +7,7 @@ define(function (require) {
 	var Marionette = require('marionette');
 
 	var d3Lib = require('d3');
-	var nvd3 = require('nvd3');
+	// var nvd3 = require('nvd3');
 
 	var data = require('./NetWorthJson');
 
@@ -19,7 +19,7 @@ define(function (require) {
 			_.bindAll(this);
 			this.options = options;
 
-			this.initNvd3();
+			// this.initNvd3();
 		},
 		initNvd3: function () {
 
