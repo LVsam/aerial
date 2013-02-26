@@ -41,9 +41,6 @@
 				deps: ['d3'],
 				exports: 'nv'
 			},
-			d3: {
-				exports: 'd3'
-			},
 			marionette: {
 				deps: ['jquery', 'underscore', 'backbone'],
 				exports: 'Marionette'

@@ -20,6 +20,7 @@ define(function (require) {
 	var Controls = require('./Controls/View.Controls');
 	var Timeline = require('./Timeline/View.Timeline');
 	var NetWorth = require('./NetWorth/ItemView.NetWorth');
+	var Folders = require('./Folders/View.Folders');
 
 
 	// Regions
@@ -33,7 +34,8 @@ define(function (require) {
 		// navigation: '#navigation',
 		netWorth: '#net-worth',
 		timeline: '#timeline',
-		controls: '#ui-controls'
+		controls: '#ui-controls',
+		folders: '#folders'
 
 		// Overlap regions
 		// modal: Modal,
@@ -49,6 +51,14 @@ define(function (require) {
 		App.$document = $(document);
 		App.$body = $('html, body');
 
+
+			// AJAX
+		$.ajaxSetup({
+			beforeSend: function (xhr, settings) {
+				xhr.setRequestHeader('User-Context', "ca3c9beff71cd8a6b80a7ab0abcbc06a");
+			}
+		});
+
 		// App Modules
 		// App.DeviceSupport = new DeviceSupport();
 		// App.Overrides = new Overrides();
@@ -58,9 +68,9 @@ define(function (require) {
 		App.Router = new Router(config);
 
 		App.controls.show(new Controls(config));
-		App.timeline.show(new Timeline(config));
-		App.netWorth.show(new NetWorth(config));
-
+		//App.timeline.show(new Timeline(config));
+		//App.netWorth.show(new NetWorth(config));
+		App.folders.show(new Folders());
 
 		// Show App Regions
 		// App.navigation.show(new Navigation(config));

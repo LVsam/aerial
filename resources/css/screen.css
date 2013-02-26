@@ -5683,17 +5683,84 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font: 11px Arial, Helvetica, sans-serif;
   color: #fff;
-  background: #111;
-<<<<<<< HEAD
+  background: #222;
   padding-top: 40px;
 }
 
-/* line 19, ../scss/screen.scss */
-#timeline {
-  width: 100%;
-  margin: 0 auto;
-=======
-  padding-top: 50px;
-  overflow-y: scroll;
->>>>>>> af7ecf1bfe3435980471044ad874bcc9b34c9fe1
+/* line 21, ../scss/screen.scss */
+#folders {
+  width: 820px;
+  margin: 20px auto;
+  padding: 5px;
+  color: #888;
+}
+
+/* line 28, ../scss/screen.scss */
+.folder-row {
+  padding: 5px;
+  background: #333;
+  margin: 0px 0px 5px 0px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px #111 solid;
+}
+
+/* line 36, ../scss/screen.scss */
+.folder-icon {
+  width: 25px;
+  height: 25px;
+  float: left;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.3)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  -webkit-box-shadow: 0px 0px 3px #111111;
+  -moz-box-shadow: 0px 0px 3px #111111;
+  box-shadow: 0px 0px 3px #111111;
+  margin: 7px;
+}
+
+/* line 46, ../scss/screen.scss */
+.folder-name {
+  float: left;
+  padding: 12px 0px 0px 5px;
+  font-size: 13px;
+}
+
+/* line 52, ../scss/screen.scss */
+.folderChart {
+  width: 150px;
+  height: 40px;
+  float: right;
+  margin-left: 5px;
+  background: #222;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 62, ../scss/screen.scss */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/* line 68, ../scss/screen.scss */
+.x.axis path {
+  display: none;
+}
+
+/* line 72, ../scss/screen.scss */
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
 }
