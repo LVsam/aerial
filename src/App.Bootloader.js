@@ -23,8 +23,7 @@
 			stringUtils: './Utils/StringUtils',
 			tabletUtils: './Utils/TabletUtils',
 
-			timeline: '../components/timelinejs/compiled/timeline',
-			nvd3: '../components/nvd3/nv.d3',
+			timeline: '../libs/TimelineJS/compiled/timeline',
 			d3: '../components/d3/d3'
 		},
 		shim: {
@@ -37,10 +36,13 @@
 			d3: {
 				exports: 'd3'
 			},
+<<<<<<< HEAD
 			nvd3: {
 				deps: ['d3'],
 				exports: 'nv'
 			},
+=======
+>>>>>>> 49843b1dcc8c5c64dc8d762997bd2ffc29d22ef5
 			marionette: {
 				deps: ['jquery', 'underscore', 'backbone'],
 				exports: 'Marionette'

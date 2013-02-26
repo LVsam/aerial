@@ -3,12 +3,11 @@
 @import "../../components/twitter-bootstrap-sass/vendor/assets/stylesheets/bootstrap";
 @import "compass/reset";
 
-@import "../../components/nvd3/src/nv.d3.css";
-
 @import "base";
 @import "layout";
 @import "net-worth";
 
+<<<<<<< HEAD
 
 body{
 	font:11px Arial, Helvetica, sans-serif;
@@ -74,3 +73,5 @@ body{
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+=======
+>>>>>>> 49843b1dcc8c5c64dc8d762997bd2ffc29d22ef5
